@@ -1,0 +1,10 @@
+<div class="form-group" [ngClass]="{'form-group-error': !control.valid && control.touched}">
+
+    <label>
+        <span class="form-label-bold" *ngIf="label">{{label}}</span>
+        <span class="form-hint" *ngIf="hint">{{hint}}</span>
+        <span class="error-message" *ngIf="control.errors && control.touched">{{error}}</span>
+    </label>
+    <textarea class="form-control" [formControl]="control"></textarea>
+
+</div>

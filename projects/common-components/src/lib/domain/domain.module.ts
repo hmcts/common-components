@@ -10,34 +10,36 @@ import {FieldReadComponent} from './components/field-read/field-read.component';
 import {PaletteService} from "./services/palette.service";
 import {FieldReadLabelComponent} from './components/field-read-label/field-read-label.component';
 import {UnsupportedFieldComponent} from "./components/unsupported-field.component/unsupported-field.component";
-// import {PaletteModule} from "./palette/palette.module";
-import {MarkdownComponent} from './components/markdown/markdown.component';
-import { TextAreaComponent } from './components/text-area/text-area.component';
-import { TextComponent } from './components/text/text.component';
+import { FieldValueComponent } from './components/field-value/field-value.component';
+
+
+
+
 
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
-        DomainPipesModule,
+        DomainPipesModule
     ],
     entryComponents: [
         UnsupportedFieldComponent,
-        TextAreaComponent,
-        TextComponent
+        FieldValueComponent
+    //     TextAreaComponent
     ],
     declarations: [
         CaseViewerComponent,
         LabelSubstitutorDirective,
-        MarkdownComponent,
         FieldReadComponent,
         FieldReadLabelComponent,
         UnsupportedFieldComponent,
-        TextAreaComponent,
-        TextComponent
+        FieldValueComponent,
+        // TextAreaComponent
     ],
     providers: [LabelSubstitutionService, FieldsUtils, PaletteService],
-    exports: [CaseViewerComponent]
+    exports: [
+        CaseViewerComponent
+    ]
 })
 export class DomainModule {
 }

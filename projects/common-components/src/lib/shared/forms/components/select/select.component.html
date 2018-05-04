@@ -1,0 +1,16 @@
+<div class="form-group" [ngClass]="{'form-group-error': !control.valid && control.touched}">
+
+    <label>
+        <span class="form-label-bold" *ngIf="label">{{label}}</span>
+        <span class="form-hint" *ngIf="hint">{{hint}}</span>
+        <span class="error-message" *ngIf="control.errors && control.touched">{{error}}</span>
+    </label>
+
+    <select class="form-control" [formControl]="control">
+        <option value="">--Select a value--</option>
+        <option value="{{type.code}}" *ngFor="let type of items">
+            {{type.label}}
+        </option>
+    </select>
+
+</div>

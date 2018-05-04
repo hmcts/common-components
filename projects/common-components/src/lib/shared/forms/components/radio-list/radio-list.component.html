@@ -1,0 +1,22 @@
+<div [ngClass]="{'form-group-error': !control.valid && control.touched}">
+
+    <fieldset class="inline">
+
+        <legend>
+            <span class="form-label-bold" *ngIf="label">{{label}}</span>
+            <span class="form-hint" *ngIf="hint">{{caseField.hint_text}}</span>
+            <span class="error-message" *ngIf="control.errors && control.touched">{{error}}</span>
+        </legend>
+
+        <div class="form-group">
+
+            <div class="multiple-choice" *ngFor="let value of options" [ngClass]="{selected: control.value === value}">
+                <input [id]="value" [name]="bob" type="radio" [formControl]="control" [value]="value">
+                <label class="form-label" [for]="value">{{value}}</label>
+            </div>
+
+        </div>
+
+    </fieldset>
+
+</div>
