@@ -1,5 +1,5 @@
 import { CaseField } from '../models/definition/case-field.model';
-import {SelectComponent} from "../../shared/forms/components/select/select.component";
+import {SelectComponent} from "../../../shared/forms/components/select/select.component";
 import {FieldValueComponent} from "../components/field-value/field-value.component";
 
 function getFixedListValue(listItems, value) {

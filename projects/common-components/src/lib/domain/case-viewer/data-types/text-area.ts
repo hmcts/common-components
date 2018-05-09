@@ -1,17 +1,13 @@
 import { CaseField } from '../models/definition/case-field.model';
-import { RadioListComponent} from "../../shared/forms/components/radio-list/radio-list.component";
+import {TextAreaComponent} from "../../../shared/forms/components/text-area/text-area.component";
 import {FieldValueComponent} from "../components/field-value/field-value.component";
 
 export default function(caseField: CaseField, write = true) {
-    const component = write ? RadioListComponent : FieldValueComponent;
+    const component = write ? TextAreaComponent : FieldValueComponent;
     return {
         componentClass: component,
         data: {
-            value: caseField.value,
-            options: [
-                'Yes',
-                'No'
-            ]
+            value: caseField.value
         }
     }
 }

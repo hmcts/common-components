@@ -1,5 +1,5 @@
 import { CaseField } from '../models/definition/case-field.model';
-import {TextComponent} from "../../shared/forms/components/text/text.component";
+import {TextComponent} from "../../../shared/forms/components/text/text.component";
 import {FieldValueComponent} from "../components/field-value/field-value.component";
 import { DatePipe} from "../pipes/date.pipe";
 
