@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 declare function require(name: string);
-const mockData = require('../../../../mock.json');
+const divorceMockCase = require('../../../../mock-divorce-case.json');
+const sscsMockCase = require('../../../../mock-sscs-case.json');
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,6 @@ export class AppComponent {
   data;
 
   constructor() {
-        this.data = mockData;
+        this.data = sscsMockCase;
   }
 }

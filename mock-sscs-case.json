@@ -1,0 +1,3319 @@
+{
+    "state": {
+        "id": "appealCreated",
+        "name": "Appeal Created",
+        "description": "Case created on CCD"
+    },
+    "channels": ["CaseWorker", "CaseWorker", "CaseWorker", "CaseWorker", "CaseWorker", "CaseWorker"],
+    "tabs": [{
+        "id": "subscriptions",
+        "label": "Subscriptions",
+        "order": 1,
+        "fields": [{
+            "id": "subscriptions",
+            "label": "Subscribers",
+            "hidden": null,
+            "value": {
+                "appellantSubscription": {
+                    "tya": "v8eg15XeZk",
+                    "email": "robinsethmarchant@hotmail.com",
+                    "mobile": "07866654734",
+                    "reason": null,
+                    "subscribeSms": "Yes",
+                    "subscribeEmail": "yes"
+                },
+                "supporterSubscription": {
+                    "tya": null,
+                    "email": null,
+                    "mobile": null,
+                    "reason": null,
+                    "subscribeSms": "",
+                    "subscribeEmail": ""
+                }
+            },
+            "hint_text": null,
+            "field_type": {
+                "id": "subscriptions",
+                "type": "Complex",
+                "min": null,
+                "max": null,
+                "regular_expression": null,
+                "fixed_list_items": [],
+                "complex_fields": [{
+                    "id": "appellantSubscription",
+                    "label": "Appellant Subscription",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "subscription",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "wantSmsNotifications",
+                            "label": "Want SMS Notifications",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "tya",
+                            "label": "Track Your Appeal Number",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "email",
+                            "label": "Email Address",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "mobile",
+                            "label": "Mobile Number",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "mobile-d0485a8a-c20a-4cb2-9590-cf8b3b5f5090",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": "^(?:(?:\\(?(?:0(?:0|11)\\)?[\\s-]?\\(?|\\+)44\\)?[\\s-]?(?:\\(?0\\)?[\\s-]?)?)|(?:\\(?0))(?:(?:\\d{5}\\)?[\\s-]?\\d{4,5})|(?:\\d{4}\\)?[\\s-]?(?:\\d{5}|\\d{3}[\\s-]?\\d{3}))|(?:\\d{3}\\)?[\\s-]?\\d{3}[\\s-]?\\d{3,4})|(?:\\d{2}\\)?[\\s-]?\\d{4}[\\s-]?\\d{4}))(?:[\\s-]?(?:x|ext\\.?|\\#)\\d{3,4})?$",
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "subscribeEmail",
+                            "label": "Subscribed to Email",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "subscribeSms",
+                            "label": "Subscribed to Text",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "wantSmsNotifications=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "reason",
+                            "label": "Reason for not subscribing / unsubscribing",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "supporterSubscription",
+                    "label": "Supporter Subscription",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "subscription",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "wantSmsNotifications",
+                            "label": "Want SMS Notifications",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "tya",
+                            "label": "Track Your Appeal Number",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "email",
+                            "label": "Email Address",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "mobile",
+                            "label": "Mobile Number",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "mobile-d0485a8a-c20a-4cb2-9590-cf8b3b5f5090",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": "^(?:(?:\\(?(?:0(?:0|11)\\)?[\\s-]?\\(?|\\+)44\\)?[\\s-]?(?:\\(?0\\)?[\\s-]?)?)|(?:\\(?0))(?:(?:\\d{5}\\)?[\\s-]?\\d{4,5})|(?:\\d{4}\\)?[\\s-]?(?:\\d{5}|\\d{3}[\\s-]?\\d{3}))|(?:\\d{3}\\)?[\\s-]?\\d{3}[\\s-]?\\d{3,4})|(?:\\d{2}\\)?[\\s-]?\\d{4}[\\s-]?\\d{4}))(?:[\\s-]?(?:x|ext\\.?|\\#)\\d{3,4})?$",
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "subscribeEmail",
+                            "label": "Subscribed to Email",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "subscribeSms",
+                            "label": "Subscribed to Text",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "wantSmsNotifications=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "reason",
+                            "label": "Reason for not subscribing / unsubscribing",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }],
+                "collection_field_type": null
+            },
+            "validation_expr": null,
+            "security_label": "PUBLIC",
+            "order": 1,
+            "display_context": null,
+            "show_condition": null,
+            "show_summary_change_option": null
+        }],
+        "show_condition": null
+    }, {
+        "id": "evidence",
+        "label": "Evidence",
+        "order": 5,
+        "fields": [{
+            "id": "evidence",
+            "label": "Evidence",
+            "hidden": null,
+            "value": {
+                "documents": [{
+                    "id": "06fdf0c2-07cc-4c96-8aea-df58ed7c5947",
+                    "value": {
+                        "dateReceived": "2018-01-08",
+                        "evidenceType": "Suppl. Submission",
+                        "evidenceProvidedBy": "Appeals Officer"
+                    }
+                }]
+            },
+            "hint_text": null,
+            "field_type": {
+                "id": "evidence",
+                "type": "Complex",
+                "min": null,
+                "max": null,
+                "regular_expression": null,
+                "fixed_list_items": [],
+                "complex_fields": [{
+                    "id": "gpConsent",
+                    "label": "GP Consent Given",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "YesOrNo",
+                        "type": "YesOrNo",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "documents",
+                    "label": "Evidence Documentation",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "documents-9d84e6e4-bddc-457e-abdf-25bf3f9310b4",
+                        "type": "Collection",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [],
+                        "collection_field_type": {
+                            "id": "doc",
+                            "type": "Complex",
+                            "min": null,
+                            "max": null,
+                            "regular_expression": null,
+                            "fixed_list_items": [],
+                            "complex_fields": [{
+                                "id": "dateReceived",
+                                "label": "Date Received",
+                                "hidden": null,
+                                "case_type_id": null,
+                                "hint_text": null,
+                                "field_type": {
+                                    "id": "Date",
+                                    "type": "Date",
+                                    "min": null,
+                                    "max": null,
+                                    "regular_expression": null,
+                                    "fixed_list_items": [],
+                                    "complex_fields": [],
+                                    "collection_field_type": null
+                                },
+                                "security_classification": "PUBLIC",
+                                "live_from": null,
+                                "live_until": null,
+                                "show_condition": null,
+                                "acls": null
+                            }, {
+                                "id": "evidenceType",
+                                "label": "Evidence Type",
+                                "hidden": null,
+                                "case_type_id": null,
+                                "hint_text": null,
+                                "field_type": {
+                                    "id": "Text",
+                                    "type": "Text",
+                                    "min": null,
+                                    "max": null,
+                                    "regular_expression": null,
+                                    "fixed_list_items": [],
+                                    "complex_fields": [],
+                                    "collection_field_type": null
+                                },
+                                "security_classification": "PUBLIC",
+                                "live_from": null,
+                                "live_until": null,
+                                "show_condition": null,
+                                "acls": null
+                            }, {
+                                "id": "evidenceProvidedBy",
+                                "label": "Evidence Provided By",
+                                "hidden": null,
+                                "case_type_id": null,
+                                "hint_text": null,
+                                "field_type": {
+                                    "id": "Text",
+                                    "type": "Text",
+                                    "min": null,
+                                    "max": null,
+                                    "regular_expression": null,
+                                    "fixed_list_items": [],
+                                    "complex_fields": [],
+                                    "collection_field_type": null
+                                },
+                                "security_classification": "PUBLIC",
+                                "live_from": null,
+                                "live_until": null,
+                                "show_condition": null,
+                                "acls": null
+                            }],
+                            "collection_field_type": null
+                        }
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }],
+                "collection_field_type": null
+            },
+            "validation_expr": null,
+            "security_label": "PUBLIC",
+            "order": 1,
+            "display_context": null,
+            "show_condition": null,
+            "show_summary_change_option": null
+        }],
+        "show_condition": null
+    }, {
+        "id": "appealInfo",
+        "label": "Appeal Details",
+        "order": 4,
+        "fields": [{
+            "id": "appeal",
+            "label": "Appeal",
+            "hidden": null,
+            "value": {
+                "appellant": {
+                    "name": {
+                        "title": "Miss",
+                        "lastName": "Other",
+                        "firstName": "L E"
+                    },
+                    "contact": {
+                        "email": null,
+                        "phone": "01324 831841",
+                        "mobile": "07391 885617"
+                    },
+                    "identity": {
+                        "dob": "1900-01-01",
+                        "nino": "JT 12 34 56 D"
+                    }
+                },
+                "benefitType": {
+                    "code": "ESA"
+                },
+                "hearingOptions": {
+                    "other": "No"
+                }
+            },
+            "hint_text": null,
+            "field_type": {
+                "id": "appeal",
+                "type": "Complex",
+                "min": null,
+                "max": null,
+                "regular_expression": null,
+                "fixed_list_items": [],
+                "complex_fields": [{
+                    "id": "mrnDetails",
+                    "label": "MRN Details",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "mrnDetails",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "dwpIssuingOffice",
+                            "label": "DWP Issuing Office",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "mrnDate",
+                            "label": "MRN Date",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Date",
+                                "type": "Date",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "mrnLateReason",
+                            "label": "MRN Missing Reason",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "mrnMissingReason",
+                            "label": "MRN Late Reason",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "appellant",
+                    "label": "Appellant Details",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "appellant",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "name",
+                            "label": "Name",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "name",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "title",
+                                    "label": "Title",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "firstName",
+                                    "label": "First Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "middleName",
+                                    "label": "Middle Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "lastName",
+                                    "label": "Last Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "identity",
+                            "label": "Identity",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "identity",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "dob",
+                                    "label": "Date Of Birth",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Date",
+                                        "type": "Date",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "nino",
+                                    "label": "National Insurance Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "address",
+                            "label": "Address Details",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "address",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "line1",
+                                    "label": "Address Line 1",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "line2",
+                                    "label": "Address Line 2",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "line3",
+                                    "label": "Address Line 3",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "town",
+                                    "label": "Town",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "county",
+                                    "label": "County",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "postcode",
+                                    "label": "Postcode",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "country",
+                                    "label": "Country",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "contact",
+                            "label": "Contact Details",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "contact",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "phone",
+                                    "label": "Contact Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "mobile",
+                                    "label": "Mobile Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "email",
+                                    "label": "Contact Email",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "isAppointee",
+                            "label": "Appointee",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "benefitType",
+                    "label": "Benefit Type",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "benefit",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "code",
+                            "label": "Benefit Code",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "description",
+                            "label": "Benefit Description",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "hearingType",
+                    "label": "Hearing Type",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "FixedList-hearingType",
+                        "type": "FixedList",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [{
+                            "code": "oral",
+                            "label": "Oral"
+                        }, {
+                            "code": "paper",
+                            "label": "Paper"
+                        }],
+                        "complex_fields": [],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "hearingOptions",
+                    "label": "Hearing Options",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "hearingOptions",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "wantsToAttend",
+                            "label": "Wants To Attend",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "wantsSupport",
+                            "label": "Wants Support",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "wantsToAttend=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "languageInterpreter",
+                            "label": "Language Interpreter",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "wantsSupport=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "languages",
+                            "label": "Languages",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "FixedList-languages",
+                                "type": "FixedList",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [{
+                                    "code": "Acholi",
+                                    "label": "Acholi"
+                                }, {
+                                    "code": "Afrikaans",
+                                    "label": "Afrikaans"
+                                }, {
+                                    "code": "Akan",
+                                    "label": "Akan"
+                                }, {
+                                    "code": "Albanian",
+                                    "label": "Albanian"
+                                }, {
+                                    "code": "Algerian",
+                                    "label": "Algerian"
+                                }, {
+                                    "code": "Amharic",
+                                    "label": "Amharic"
+                                }, {
+                                    "code": "Arabic",
+                                    "label": "Arabic"
+                                }, {
+                                    "code": "Arabic (Middle Eastern)",
+                                    "label": "Arabic (Middle Eastern)"
+                                }, {
+                                    "code": "Arabic (North African)",
+                                    "label": "Arabic (North African)"
+                                }, {
+                                    "code": "Armenian",
+                                    "label": "Armenian"
+                                }, {
+                                    "code": "Ashanti",
+                                    "label": "Ashanti"
+                                }, {
+                                    "code": "Assyrian",
+                                    "label": "Assyrian"
+                                }, {
+                                    "code": "Ateso",
+                                    "label": "Ateso"
+                                }, {
+                                    "code": "Azari",
+                                    "label": "Azari"
+                                }, {
+                                    "code": "Azerbajani (aka Nth Azari)",
+                                    "label": "Azerbajani (aka Nth Azari)"
+                                }, {
+                                    "code": "Bajan (West Indian)",
+                                    "label": "Bajan (West Indian)"
+                                }, {
+                                    "code": "Bajuni",
+                                    "label": "Bajuni"
+                                }, {
+                                    "code": "Baluchi",
+                                    "label": "Baluchi"
+                                }, {
+                                    "code": "Bambara",
+                                    "label": "Bambara"
+                                }, {
+                                    "code": "Banjuni",
+                                    "label": "Banjuni"
+                                }, {
+                                    "code": "Bardini",
+                                    "label": "Bardini"
+                                }, {
+                                    "code": "Bassa",
+                                    "label": "Bassa"
+                                }, {
+                                    "code": "Belorussian",
+                                    "label": "Belorussian"
+                                }, {
+                                    "code": "Benba (Bemba)",
+                                    "label": "Benba (Bemba)"
+                                }, {
+                                    "code": "Bengali",
+                                    "label": "Bengali"
+                                }, {
+                                    "code": "Bengali (Sylheti)",
+                                    "label": "Bengali (Sylheti)"
+                                }, {
+                                    "code": "Benin/Edo",
+                                    "label": "Benin/Edo"
+                                }, {
+                                    "code": "Berber",
+                                    "label": "Berber"
+                                }, {
+                                    "code": "Bharuchi",
+                                    "label": "Bharuchi"
+                                }, {
+                                    "code": "Bhutanese",
+                                    "label": "Bhutanese"
+                                }, {
+                                    "code": "Bihari",
+                                    "label": "Bihari"
+                                }, {
+                                    "code": "Bilin",
+                                    "label": "Bilin"
+                                }, {
+                                    "code": "Bravanese",
+                                    "label": "Bravanese"
+                                }, {
+                                    "code": "Brong",
+                                    "label": "Brong"
+                                }, {
+                                    "code": "Bulgarian",
+                                    "label": "Bulgarian"
+                                }, {
+                                    "code": "Burmese",
+                                    "label": "Burmese"
+                                }, {
+                                    "code": "Cambellpuri",
+                                    "label": "Cambellpuri"
+                                }, {
+                                    "code": "Cantonese",
+                                    "label": "Cantonese"
+                                }, {
+                                    "code": "Cebuano",
+                                    "label": "Cebuano"
+                                }, {
+                                    "code": "Chechen",
+                                    "label": "Chechen"
+                                }, {
+                                    "code": "Chichewa",
+                                    "label": "Chichewa"
+                                }, {
+                                    "code": "Chittagonain",
+                                    "label": "Chittagonain"
+                                }, {
+                                    "code": "Creole (English)",
+                                    "label": "Creole (English)"
+                                }, {
+                                    "code": "Creole (French)",
+                                    "label": "Creole (French)"
+                                }, {
+                                    "code": "Creole (Portuguese)",
+                                    "label": "Creole (Portuguese)"
+                                }, {
+                                    "code": "Creole (Spanish)",
+                                    "label": "Creole (Spanish)"
+                                }, {
+                                    "code": "Czech",
+                                    "label": "Czech"
+                                }, {
+                                    "code": "Danish",
+                                    "label": "Danish"
+                                }, {
+                                    "code": "Dari",
+                                    "label": "Dari"
+                                }, {
+                                    "code": "Dinka",
+                                    "label": "Dinka"
+                                }, {
+                                    "code": "Dioula",
+                                    "label": "Dioula"
+                                }, {
+                                    "code": "Douala",
+                                    "label": "Douala"
+                                }, {
+                                    "code": "Dutch",
+                                    "label": "Dutch"
+                                }, {
+                                    "code": "Edo/Benin",
+                                    "label": "Edo/Benin"
+                                }, {
+                                    "code": "Efik",
+                                    "label": "Efik"
+                                }, {
+                                    "code": "Emakhuna",
+                                    "label": "Emakhuna"
+                                }, {
+                                    "code": "Estonian",
+                                    "label": "Estonian"
+                                }, {
+                                    "code": "Ewe",
+                                    "label": "Ewe"
+                                }, {
+                                    "code": "Ewondo",
+                                    "label": "Ewondo"
+                                }, {
+                                    "code": "Fanti",
+                                    "label": "Fanti"
+                                }, {
+                                    "code": "Farsi",
+                                    "label": "Farsi"
+                                }, {
+                                    "code": "Feili",
+                                    "label": "Feili"
+                                }, {
+                                    "code": "Fijian",
+                                    "label": "Fijian"
+                                }, {
+                                    "code": "Flemish",
+                                    "label": "Flemish"
+                                }, {
+                                    "code": "French",
+                                    "label": "French"
+                                }, {
+                                    "code": "French (Arabic)",
+                                    "label": "French (Arabic)"
+                                }, {
+                                    "code": "French(African)",
+                                    "label": "French(African)"
+                                }, {
+                                    "code": "Fula",
+                                    "label": "Fula"
+                                }, {
+                                    "code": "Ga",
+                                    "label": "Ga"
+                                }, {
+                                    "code": "Gallacian",
+                                    "label": "Gallacian"
+                                }, {
+                                    "code": "Georgian",
+                                    "label": "Georgian"
+                                }, {
+                                    "code": "German",
+                                    "label": "German"
+                                }, {
+                                    "code": "Gorani",
+                                    "label": "Gorani"
+                                }, {
+                                    "code": "Greek",
+                                    "label": "Greek"
+                                }, {
+                                    "code": "Gujarati",
+                                    "label": "Gujarati"
+                                }, {
+                                    "code": "Gurage",
+                                    "label": "Gurage"
+                                }, {
+                                    "code": "Guran",
+                                    "label": "Guran"
+                                }, {
+                                    "code": "Hakka",
+                                    "label": "Hakka"
+                                }, {
+                                    "code": "Hausa",
+                                    "label": "Hausa"
+                                }, {
+                                    "code": "Hebrew",
+                                    "label": "Hebrew"
+                                }, {
+                                    "code": "Hendko",
+                                    "label": "Hendko"
+                                }, {
+                                    "code": "Herero",
+                                    "label": "Herero"
+                                }, {
+                                    "code": "Hindi",
+                                    "label": "Hindi"
+                                }, {
+                                    "code": "Hindko",
+                                    "label": "Hindko"
+                                }, {
+                                    "code": "Hokkien",
+                                    "label": "Hokkien"
+                                }, {
+                                    "code": "Hungarian",
+                                    "label": "Hungarian"
+                                }, {
+                                    "code": "Ibibio",
+                                    "label": "Ibibio"
+                                }, {
+                                    "code": "Igbo (Also Known As Ibo)",
+                                    "label": "Igbo (Also Known As Ibo)"
+                                }, {
+                                    "code": "Ilocano",
+                                    "label": "Ilocano"
+                                }, {
+                                    "code": "Indonesian",
+                                    "label": "Indonesian"
+                                }, {
+                                    "code": "Ishan",
+                                    "label": "Ishan"
+                                }, {
+                                    "code": "Isoko",
+                                    "label": "Isoko"
+                                }, {
+                                    "code": "Italian",
+                                    "label": "Italian"
+                                }, {
+                                    "code": "Jamaican",
+                                    "label": "Jamaican"
+                                }, {
+                                    "code": "Japanese",
+                                    "label": "Japanese"
+                                }, {
+                                    "code": "Javanese",
+                                    "label": "Javanese"
+                                }, {
+                                    "code": "Kachi",
+                                    "label": "Kachi"
+                                }, {
+                                    "code": "Karaninka",
+                                    "label": "Karaninka"
+                                }, {
+                                    "code": "Kashmiri",
+                                    "label": "Kashmiri"
+                                }, {
+                                    "code": "Khalanga",
+                                    "label": "Khalanga"
+                                }, {
+                                    "code": "Khmer",
+                                    "label": "Khmer"
+                                }, {
+                                    "code": "Khymer Khymer",
+                                    "label": "Khymer Khymer"
+                                }, {
+                                    "code": "Kibajuni,Kibanjuni,Bajuni,Ban",
+                                    "label": "Kibajuni,Kibanjuni,Bajuni,Ban"
+                                }, {
+                                    "code": "Kibanjuni",
+                                    "label": "Kibanjuni"
+                                }, {
+                                    "code": "Kichagga",
+                                    "label": "Kichagga"
+                                }, {
+                                    "code": "Kikongo",
+                                    "label": "Kikongo"
+                                }, {
+                                    "code": "Kikuyu",
+                                    "label": "Kikuyu"
+                                }, {
+                                    "code": "Kinyarwandan",
+                                    "label": "Kinyarwandan"
+                                }, {
+                                    "code": "Kirundi",
+                                    "label": "Kirundi"
+                                }, {
+                                    "code": "Kisakata",
+                                    "label": "Kisakata"
+                                }, {
+                                    "code": "Kiswahili",
+                                    "label": "Kiswahili"
+                                }, {
+                                    "code": "Konkani",
+                                    "label": "Konkani"
+                                }, {
+                                    "code": "Korean",
+                                    "label": "Korean"
+                                }, {
+                                    "code": "Krio (Sierra Leone)",
+                                    "label": "Krio (Sierra Leone)"
+                                }, {
+                                    "code": "Kru",
+                                    "label": "Kru"
+                                }, {
+                                    "code": "Kurdish (Bardini)",
+                                    "label": "Kurdish (Bardini)"
+                                }, {
+                                    "code": "Kurdish (Kurmanji)",
+                                    "label": "Kurdish (Kurmanji)"
+                                }, {
+                                    "code": "Kurdish (Sorani)",
+                                    "label": "Kurdish (Sorani)"
+                                }, {
+                                    "code": "Kutchi",
+                                    "label": "Kutchi"
+                                }, {
+                                    "code": "Kyrgyz",
+                                    "label": "Kyrgyz"
+                                }, {
+                                    "code": "Lango",
+                                    "label": "Lango"
+                                }, {
+                                    "code": "Latvian",
+                                    "label": "Latvian"
+                                }, {
+                                    "code": "Lingala",
+                                    "label": "Lingala"
+                                }, {
+                                    "code": "Lithuanian",
+                                    "label": "Lithuanian"
+                                }, {
+                                    "code": "Luba (Tshiluba)",
+                                    "label": "Luba (Tshiluba)"
+                                }, {
+                                    "code": "Lugandan",
+                                    "label": "Lugandan"
+                                }, {
+                                    "code": "Lugisa",
+                                    "label": "Lugisa"
+                                }, {
+                                    "code": "Lunyankole",
+                                    "label": "Lunyankole"
+                                }, {
+                                    "code": "Luo",
+                                    "label": "Luo"
+                                }, {
+                                    "code": "Luo (Kenyan)",
+                                    "label": "Luo (Kenyan)"
+                                }, {
+                                    "code": "Luo (Ugandan[Acholi District])",
+                                    "label": "Luo (Ugandan[Acholi District])"
+                                }, {
+                                    "code": "Luo (Ugandan[Lango District])",
+                                    "label": "Luo (Ugandan[Lango District])"
+                                }, {
+                                    "code": "Lusoga",
+                                    "label": "Lusoga"
+                                }, {
+                                    "code": "Lutoro",
+                                    "label": "Lutoro"
+                                }, {
+                                    "code": "Macedonian",
+                                    "label": "Macedonian"
+                                }, {
+                                    "code": "Maghreb",
+                                    "label": "Maghreb"
+                                }, {
+                                    "code": "Malay",
+                                    "label": "Malay"
+                                }, {
+                                    "code": "Malayalam",
+                                    "label": "Malayalam"
+                                }, {
+                                    "code": "Maldivian",
+                                    "label": "Maldivian"
+                                }, {
+                                    "code": "Malinke",
+                                    "label": "Malinke"
+                                }, {
+                                    "code": "Maltese",
+                                    "label": "Maltese"
+                                }, {
+                                    "code": "Mandarin",
+                                    "label": "Mandarin"
+                                }, {
+                                    "code": "Mandinka",
+                                    "label": "Mandinka"
+                                }, {
+                                    "code": "Marathi",
+                                    "label": "Marathi"
+                                }, {
+                                    "code": "Mende",
+                                    "label": "Mende"
+                                }, {
+                                    "code": "Mina",
+                                    "label": "Mina"
+                                }, {
+                                    "code": "Mirpuri",
+                                    "label": "Mirpuri"
+                                }, {
+                                    "code": "Moldovan",
+                                    "label": "Moldovan"
+                                }, {
+                                    "code": "Mongolian",
+                                    "label": "Mongolian"
+                                }, {
+                                    "code": "Monokutuba",
+                                    "label": "Monokutuba"
+                                }, {
+                                    "code": "Navsari",
+                                    "label": "Navsari"
+                                }, {
+                                    "code": "Ndebele",
+                                    "label": "Ndebele"
+                                }, {
+                                    "code": "Nepali",
+                                    "label": "Nepali"
+                                }, {
+                                    "code": "Ngwa",
+                                    "label": "Ngwa"
+                                }, {
+                                    "code": "Norwegian",
+                                    "label": "Norwegian"
+                                }, {
+                                    "code": "Nzima",
+                                    "label": "Nzima"
+                                }, {
+                                    "code": "Oromo",
+                                    "label": "Oromo"
+                                }, {
+                                    "code": "Pahari",
+                                    "label": "Pahari"
+                                }, {
+                                    "code": "Pampangan",
+                                    "label": "Pampangan"
+                                }, {
+                                    "code": "Pangasinan",
+                                    "label": "Pangasinan"
+                                }, {
+                                    "code": "Pathwari",
+                                    "label": "Pathwari"
+                                }, {
+                                    "code": "Patois",
+                                    "label": "Patois"
+                                }, {
+                                    "code": "Pidgin English",
+                                    "label": "Pidgin English"
+                                }, {
+                                    "code": "Polish",
+                                    "label": "Polish"
+                                }, {
+                                    "code": "Portuguese",
+                                    "label": "Portuguese"
+                                }, {
+                                    "code": "Pothohari",
+                                    "label": "Pothohari"
+                                }, {
+                                    "code": "Punjabi",
+                                    "label": "Punjabi"
+                                }, {
+                                    "code": "Punjabi (Indian)",
+                                    "label": "Punjabi (Indian)"
+                                }, {
+                                    "code": "Punjabi (Pakistani)",
+                                    "label": "Punjabi (Pakistani)"
+                                }, {
+                                    "code": "Pushtu (Also Known As Pashto)",
+                                    "label": "Pushtu (Also Known As Pashto)"
+                                }, {
+                                    "code": "Putonghue",
+                                    "label": "Putonghue"
+                                }, {
+                                    "code": "Roma",
+                                    "label": "Roma"
+                                }, {
+                                    "code": "Romanian",
+                                    "label": "Romanian"
+                                }, {
+                                    "code": "Romany",
+                                    "label": "Romany"
+                                }, {
+                                    "code": "Rukiga",
+                                    "label": "Rukiga"
+                                }, {
+                                    "code": "Runyoro",
+                                    "label": "Runyoro"
+                                }, {
+                                    "code": "Russian",
+                                    "label": "Russian"
+                                }, {
+                                    "code": "Rutoro",
+                                    "label": "Rutoro"
+                                }, {
+                                    "code": "Sarahuleh",
+                                    "label": "Sarahuleh"
+                                }, {
+                                    "code": "Saraiki (Seraiki)",
+                                    "label": "Saraiki (Seraiki)"
+                                }, {
+                                    "code": "Sarpo",
+                                    "label": "Sarpo"
+                                }, {
+                                    "code": "Senegal (French) Olof Dialect",
+                                    "label": "Senegal (French) Olof Dialect"
+                                }, {
+                                    "code": "Senegal (Wolof)",
+                                    "label": "Senegal (Wolof)"
+                                }, {
+                                    "code": "Serbo‑Croatian",
+                                    "label": "Serbo‑Croatian"
+                                }, {
+                                    "code": "Setswana",
+                                    "label": "Setswana"
+                                }, {
+                                    "code": "Shina",
+                                    "label": "Shina"
+                                }, {
+                                    "code": "Shona",
+                                    "label": "Shona"
+                                }, {
+                                    "code": "Sign (American Sign)",
+                                    "label": "Sign (American Sign)"
+                                }, {
+                                    "code": "Sign (BSL)",
+                                    "label": "Sign (BSL)"
+                                }, {
+                                    "code": "Sign (Deaf Blind ‑ Hands on)",
+                                    "label": "Sign (Deaf Blind ‑ Hands on)"
+                                }, {
+                                    "code": "Sign (International Sign)",
+                                    "label": "Sign (International Sign)"
+                                }, {
+                                    "code": "Sign (Lip Speaker)",
+                                    "label": "Sign (Lip Speaker)"
+                                }, {
+                                    "code": "Sign (Makaton)",
+                                    "label": "Sign (Makaton)"
+                                }, {
+                                    "code": "Sign (Manual Alphabet)",
+                                    "label": "Sign (Manual Alphabet)"
+                                }, {
+                                    "code": "Sign (Note taker)",
+                                    "label": "Sign (Note taker)"
+                                }, {
+                                    "code": "Sign (Relay)",
+                                    "label": "Sign (Relay)"
+                                }, {
+                                    "code": "Sign (SSE)",
+                                    "label": "Sign (SSE)"
+                                }, {
+                                    "code": "Sign (Visual Frame)",
+                                    "label": "Sign (Visual Frame)"
+                                }, {
+                                    "code": "Sign Language (Others)",
+                                    "label": "Sign Language (Others)"
+                                }, {
+                                    "code": "Sign Palantypist/Speech to TX",
+                                    "label": "Sign Palantypist/Speech to TX"
+                                }, {
+                                    "code": "Sindhi",
+                                    "label": "Sindhi"
+                                }, {
+                                    "code": "Sinhalese",
+                                    "label": "Sinhalese"
+                                }, {
+                                    "code": "Slovak",
+                                    "label": "Slovak"
+                                }, {
+                                    "code": "Slovenian",
+                                    "label": "Slovenian"
+                                }, {
+                                    "code": "Somali",
+                                    "label": "Somali"
+                                }, {
+                                    "code": "Spanish",
+                                    "label": "Spanish"
+                                }, {
+                                    "code": "Susu",
+                                    "label": "Susu"
+                                }, {
+                                    "code": "Swahili",
+                                    "label": "Swahili"
+                                }, {
+                                    "code": "Swedish",
+                                    "label": "Swedish"
+                                }, {
+                                    "code": "Sylheti",
+                                    "label": "Sylheti"
+                                }, {
+                                    "code": "Tagalog",
+                                    "label": "Tagalog"
+                                }, {
+                                    "code": "Taiwanese",
+                                    "label": "Taiwanese"
+                                }, {
+                                    "code": "Tamil",
+                                    "label": "Tamil"
+                                }, {
+                                    "code": "Telugu",
+                                    "label": "Telugu"
+                                }, {
+                                    "code": "Temne",
+                                    "label": "Temne"
+                                }, {
+                                    "code": "Thai",
+                                    "label": "Thai"
+                                }, {
+                                    "code": "Tibetan",
+                                    "label": "Tibetan"
+                                }, {
+                                    "code": "Tigre",
+                                    "label": "Tigre"
+                                }, {
+                                    "code": "Tigrinya",
+                                    "label": "Tigrinya"
+                                }, {
+                                    "code": "Toura",
+                                    "label": "Toura"
+                                }, {
+                                    "code": "Training",
+                                    "label": "Training"
+                                }, {
+                                    "code": "Turkish",
+                                    "label": "Turkish"
+                                }, {
+                                    "code": "Turkmen",
+                                    "label": "Turkmen"
+                                }, {
+                                    "code": "Twi",
+                                    "label": "Twi"
+                                }, {
+                                    "code": "Uighur",
+                                    "label": "Uighur"
+                                }, {
+                                    "code": "Ukrainian",
+                                    "label": "Ukrainian"
+                                }, {
+                                    "code": "Urdu",
+                                    "label": "Urdu"
+                                }, {
+                                    "code": "Urohobo",
+                                    "label": "Urohobo"
+                                }, {
+                                    "code": "Uzbek",
+                                    "label": "Uzbek"
+                                }, {
+                                    "code": "Vietnamese",
+                                    "label": "Vietnamese"
+                                }, {
+                                    "code": "Visayan",
+                                    "label": "Visayan"
+                                }, {
+                                    "code": "Welsh",
+                                    "label": "Welsh"
+                                }, {
+                                    "code": "Wolof",
+                                    "label": "Wolof"
+                                }, {
+                                    "code": "Xhosa",
+                                    "label": "Xhosa"
+                                }, {
+                                    "code": "Yoruba",
+                                    "label": "Yoruba"
+                                }, {
+                                    "code": "zaghawa",
+                                    "label": "zaghawa"
+                                }, {
+                                    "code": "Zaza",
+                                    "label": "Zaza"
+                                }, {
+                                    "code": "Zulu",
+                                    "label": "Zulu"
+                                }],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "languageInterpreter=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "arrangements",
+                            "label": "Hearing arrangement options",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "MultiSelectList-hearingArrangementOptions",
+                                "type": "MultiSelectList",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [{
+                                    "code": "signLanguageInterpreter",
+                                    "label": "Sign language interpreter"
+                                }, {
+                                    "code": "hearingLoop",
+                                    "label": "Hearing loop"
+                                }, {
+                                    "code": "disabledAccess",
+                                    "label": "Disabled access"
+                                }],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "wantsSupport=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "scheduleHearing",
+                            "label": "Schedule Hearing",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "wantsToAttend=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "excludeDates",
+                            "label": "Excluded Dates",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "excludeDates-b93d471f-ecca-404e-a13c-c4f9e98a85bc",
+                                "type": "Collection",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": {
+                                    "id": "dateRange",
+                                    "type": "Complex",
+                                    "min": null,
+                                    "max": null,
+                                    "regular_expression": null,
+                                    "fixed_list_items": [],
+                                    "complex_fields": [{
+                                        "id": "start",
+                                        "label": "Start Date",
+                                        "hidden": null,
+                                        "case_type_id": null,
+                                        "hint_text": null,
+                                        "field_type": {
+                                            "id": "Date",
+                                            "type": "Date",
+                                            "min": null,
+                                            "max": null,
+                                            "regular_expression": null,
+                                            "fixed_list_items": [],
+                                            "complex_fields": [],
+                                            "collection_field_type": null
+                                        },
+                                        "security_classification": "PUBLIC",
+                                        "live_from": null,
+                                        "live_until": null,
+                                        "show_condition": null,
+                                        "acls": null
+                                    }, {
+                                        "id": "end",
+                                        "label": "End Date",
+                                        "hidden": null,
+                                        "case_type_id": null,
+                                        "hint_text": null,
+                                        "field_type": {
+                                            "id": "Date",
+                                            "type": "Date",
+                                            "min": null,
+                                            "max": null,
+                                            "regular_expression": null,
+                                            "fixed_list_items": [],
+                                            "complex_fields": [],
+                                            "collection_field_type": null
+                                        },
+                                        "security_classification": "PUBLIC",
+                                        "live_from": null,
+                                        "live_until": null,
+                                        "show_condition": null,
+                                        "acls": null
+                                    }],
+                                    "collection_field_type": null
+                                }
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "scheduleHearing=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "other",
+                            "label": "Other Information",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "scheduleHearing=\"Yes\"",
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "appealReasons",
+                    "label": "Appeal Reasons",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "appealReasons",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "reasons",
+                            "label": "Reasons",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "reasons-48375985-df67-470a-82d7-d4e5efea39f5",
+                                "type": "Collection",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": {
+                                    "id": "appealReason",
+                                    "type": "Complex",
+                                    "min": null,
+                                    "max": null,
+                                    "regular_expression": null,
+                                    "fixed_list_items": [],
+                                    "complex_fields": [{
+                                        "id": "reason",
+                                        "label": "Reason",
+                                        "hidden": null,
+                                        "case_type_id": null,
+                                        "hint_text": null,
+                                        "field_type": {
+                                            "id": "Text",
+                                            "type": "Text",
+                                            "min": null,
+                                            "max": null,
+                                            "regular_expression": null,
+                                            "fixed_list_items": [],
+                                            "complex_fields": [],
+                                            "collection_field_type": null
+                                        },
+                                        "security_classification": "PUBLIC",
+                                        "live_from": null,
+                                        "live_until": null,
+                                        "show_condition": null,
+                                        "acls": null
+                                    }, {
+                                        "id": "description",
+                                        "label": "Description",
+                                        "hidden": null,
+                                        "case_type_id": null,
+                                        "hint_text": null,
+                                        "field_type": {
+                                            "id": "Text",
+                                            "type": "Text",
+                                            "min": null,
+                                            "max": null,
+                                            "regular_expression": null,
+                                            "fixed_list_items": [],
+                                            "complex_fields": [],
+                                            "collection_field_type": null
+                                        },
+                                        "security_classification": "PUBLIC",
+                                        "live_from": null,
+                                        "live_until": null,
+                                        "show_condition": null,
+                                        "acls": null
+                                    }],
+                                    "collection_field_type": null
+                                }
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "otherReasons",
+                            "label": "Other Reasons",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "supporter",
+                    "label": "Supporter Details",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "supporter",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "name",
+                            "label": "Name",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "name",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "title",
+                                    "label": "Title",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "firstName",
+                                    "label": "First Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "middleName",
+                                    "label": "Middle Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "lastName",
+                                    "label": "Last Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "contact",
+                            "label": "Contact Details",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "contact",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "phone",
+                                    "label": "Contact Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "mobile",
+                                    "label": "Mobile Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "email",
+                                    "label": "Contact Email",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "rep",
+                    "label": "Representative Details",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "representative",
+                        "type": "Complex",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [{
+                            "id": "hasRepresentative",
+                            "label": "Has Representative",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "YesOrNo",
+                                "type": "YesOrNo",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": null,
+                            "acls": null
+                        }, {
+                            "id": "organisation",
+                            "label": "Organisation",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "Text",
+                                "type": "Text",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "hasRepresentative=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "name",
+                            "label": "Name",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "name",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "title",
+                                    "label": "Title",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "firstName",
+                                    "label": "First Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "middleName",
+                                    "label": "Middle Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "lastName",
+                                    "label": "Last Name",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "hasRepresentative=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "address",
+                            "label": "Address Details",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "address",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "line1",
+                                    "label": "Address Line 1",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "line2",
+                                    "label": "Address Line 2",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "line3",
+                                    "label": "Address Line 3",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "town",
+                                    "label": "Town",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "county",
+                                    "label": "County",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "postcode",
+                                    "label": "Postcode",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "country",
+                                    "label": "Country",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "hasRepresentative=\"Yes\"",
+                            "acls": null
+                        }, {
+                            "id": "contact",
+                            "label": "Contact Details",
+                            "hidden": null,
+                            "case_type_id": null,
+                            "hint_text": null,
+                            "field_type": {
+                                "id": "contact",
+                                "type": "Complex",
+                                "min": null,
+                                "max": null,
+                                "regular_expression": null,
+                                "fixed_list_items": [],
+                                "complex_fields": [{
+                                    "id": "phone",
+                                    "label": "Contact Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "mobile",
+                                    "label": "Mobile Number",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }, {
+                                    "id": "email",
+                                    "label": "Contact Email",
+                                    "hidden": null,
+                                    "case_type_id": null,
+                                    "hint_text": null,
+                                    "field_type": {
+                                        "id": "Text",
+                                        "type": "Text",
+                                        "min": null,
+                                        "max": null,
+                                        "regular_expression": null,
+                                        "fixed_list_items": [],
+                                        "complex_fields": [],
+                                        "collection_field_type": null
+                                    },
+                                    "security_classification": "PUBLIC",
+                                    "live_from": null,
+                                    "live_until": null,
+                                    "show_condition": null,
+                                    "acls": null
+                                }],
+                                "collection_field_type": null
+                            },
+                            "security_classification": "PUBLIC",
+                            "live_from": null,
+                            "live_until": null,
+                            "show_condition": "hasRepresentative=\"Yes\"",
+                            "acls": null
+                        }],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }, {
+                    "id": "signer",
+                    "label": "Signer",
+                    "hidden": null,
+                    "case_type_id": null,
+                    "hint_text": null,
+                    "field_type": {
+                        "id": "Text",
+                        "type": "Text",
+                        "min": null,
+                        "max": null,
+                        "regular_expression": null,
+                        "fixed_list_items": [],
+                        "complex_fields": [],
+                        "collection_field_type": null
+                    },
+                    "security_classification": "PUBLIC",
+                    "live_from": null,
+                    "live_until": null,
+                    "show_condition": null,
+                    "acls": null
+                }],
+                "collection_field_type": null
+            },
+            "validation_expr": null,
+            "security_label": "PUBLIC",
+            "order": 1,
+            "display_context": null,
+            "show_condition": null,
+            "show_summary_change_option": null
+        }],
+        "show_condition": null
+    }, {
+        "id": "regionalProcessingCenter",
+        "label": "RegionalProcessingCenter",
+        "order": 6,
+        "fields": [],
+        "show_condition": null
+    }, {
+        "id": "caseInfo",
+        "label": "Case Info",
+        "order": 3,
+        "fields": [{
+            "id": "caseReference",
+            "label": "SC Case Number",
+            "hidden": null,
+            "value": "SC285/17/00001",
+            "hint_text": null,
+            "field_type": {
+                "id": "Text",
+                "type": "Text",
+                "min": null,
+                "max": null,
+                "regular_expression": null,
+                "fixed_list_items": [],
+                "complex_fields": [],
+                "collection_field_type": null
+            },
+            "validation_expr": null,
+            "security_label": "PUBLIC",
+            "order": 1,
+            "display_context": null,
+            "show_condition": null,
+            "show_summary_change_option": null
+        }],
+        "show_condition": null
+    }, {
+        "id": "events",
+        "label": "Case Progression",
+        "order": 2,
+        "fields": [{
+            "id": "events",
+            "label": "Case Progression",
+            "hidden": null,
+            "value": [{
+                "id": "26a7d615-5e3f-44bc-b14e-83f110df93bb",
+                "value": {
+                    "date": "2018-02-13T16:13:11.243",
+                    "type": "responseReceived",
+                    "description": "Response received"
+                }
+            }, {
+                "id": "a7e6b525-fc4f-48c0-a60e-39ac612ca641",
+                "value": {
+                    "date": "2018-02-13T16:13:11.243",
+                    "type": "responseReceived",
+                    "description": "Response received"
+                }
+            }, {
+                "id": "589e1f45-852c-4217-8b84-8a804c4a5006",
+                "value": {
+                    "date": "2017-12-12T11:37:35.093",
+                    "type": "responseReceived",
+                    "description": "Response received"
+                }
+            }, {
+                "id": "b69558b6-92d7-426e-8228-d7855c2d7400",
+                "value": {
+                    "date": "2017-11-16T08:31:24.970",
+                    "type": "appealReceived",
+                    "description": "Appeal received"
+                }
+            }],
+            "hint_text": null,
+            "field_type": {
+                "id": "events-57c1896e-37ac-49e6-9249-c060546dab4a",
+                "type": "Collection",
+                "min": null,
+                "max": null,
+                "regular_expression": null,
+                "fixed_list_items": [],
+                "complex_fields": [],
+                "collection_field_type": {
+                    "id": "event",
+                    "type": "Complex",
+                    "min": null,
+                    "max": null,
+                    "regular_expression": null,
+                    "fixed_list_items": [],
+                    "complex_fields": [{
+                        "id": "date",
+                        "label": "Date",
+                        "hidden": null,
+                        "case_type_id": null,
+                        "hint_text": null,
+                        "field_type": {
+                            "id": "Text",
+                            "type": "Text",
+                            "min": null,
+                            "max": null,
+                            "regular_expression": null,
+                            "fixed_list_items": [],
+                            "complex_fields": [],
+                            "collection_field_type": null
+                        },
+                        "security_classification": "PUBLIC",
+                        "live_from": null,
+                        "live_until": null,
+                        "show_condition": null,
+                        "acls": null
+                    }, {
+                        "id": "type",
+                        "label": "Event Type",
+                        "hidden": null,
+                        "case_type_id": null,
+                        "hint_text": null,
+                        "field_type": {
+                            "id": "FixedList-eventType",
+                            "type": "FixedList",
+                            "min": null,
+                            "max": null,
+                            "regular_expression": null,
+                            "fixed_list_items": [{
+                                "code": "appealCreated",
+                                "label": "Appeal Created"
+                            }, {
+                                "code": "updateCaseData",
+                                "label": "Case Updated"
+                            }, {
+                                "code": "appealLapsed",
+                                "label": "Appeal Lapsed"
+                            }, {
+                                "code": "appealReceived",
+                                "label": "Appeal Received"
+                            }, {
+                                "code": "appealWithdrawn",
+                                "label": "Appeal Withdrawn"
+                            }, {
+                                "code": "evidenceReceived",
+                                "label": "Evidence Received"
+                            }, {
+                                "code": "evidenceReminder",
+                                "label": "Evidence Reminder"
+                            }, {
+                                "code": "hearingBooked",
+                                "label": "Hearing Booked"
+                            }, {
+                                "code": "hearingReminder",
+                                "label": "Hearing Reminder"
+                            }, {
+                                "code": "hearingPostponed",
+                                "label": "Hearing Postponed"
+                            }, {
+                                "code": "hearingAdjourned",
+                                "label": "Hearing Adjourned"
+                            }, {
+                                "code": "responseReceived",
+                                "label": "Response received"
+                            }, {
+                                "code": "appealDormant",
+                                "label": "Appeal Dormant"
+                            }],
+                            "complex_fields": [],
+                            "collection_field_type": null
+                        },
+                        "security_classification": "PUBLIC",
+                        "live_from": null,
+                        "live_until": null,
+                        "show_condition": null,
+                        "acls": null
+                    }, {
+                        "id": "description",
+                        "label": "Description",
+                        "hidden": null,
+                        "case_type_id": null,
+                        "hint_text": null,
+                        "field_type": {
+                            "id": "Text",
+                            "type": "Text",
+                            "min": null,
+                            "max": null,
+                            "regular_expression": null,
+                            "fixed_list_items": [],
+                            "complex_fields": [],
+                            "collection_field_type": null
+                        },
+                        "security_classification": "PUBLIC",
+                        "live_from": null,
+                        "live_until": null,
+                        "show_condition": null,
+                        "acls": null
+                    }],
+                    "collection_field_type": null
+                }
+            },
+            "validation_expr": null,
+            "security_label": "PUBLIC",
+            "order": 1,
+            "display_context": null,
+            "show_condition": null,
+            "show_summary_change_option": null
+        }],
+        "show_condition": null
+    }],
+    "triggers": [{
+        "id": "addSCnumber",
+        "name": "Add / update SC number",
+        "description": "Add a SC number to the case",
+        "order": 16
+    }, {
+        "id": "eventsUpdates",
+        "name": "Update events",
+        "description": "Update Events Data for Notifications",
+        "order": 14
+    }, {
+        "id": "caseUpdated",
+        "name": "Update to case data",
+        "description": "Automatic update of data from GAPS 2 - no notification",
+        "order": 2
+    }, {
+        "id": "subscriptionUpdated",
+        "name": "Updated subscription",
+        "description": "Update Subscription",
+        "order": 13
+    }],
+    "events": [{
+        "id": 157852,
+        "timestamp": "2018-04-30T12:45:51.527",
+        "summary": "",
+        "comment": "",
+        "event_id": "addSCnumber",
+        "event_name": "Add / update SC number",
+        "user_id": 559,
+        "user_last_name": "Green",
+        "user_first_name": "Josh",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 157821,
+        "timestamp": "2018-04-30T08:27:53.965",
+        "summary": "",
+        "comment": "",
+        "event_id": "addSCnumber",
+        "event_name": "Add / update SC number",
+        "user_id": 559,
+        "user_last_name": "Green",
+        "user_first_name": "Josh",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 157820,
+        "timestamp": "2018-04-30T08:27:34.576",
+        "summary": "",
+        "comment": "",
+        "event_id": "addSCnumber",
+        "event_name": "Add / update SC number",
+        "user_id": 559,
+        "user_last_name": "Green",
+        "user_first_name": "Josh",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 154622,
+        "timestamp": "2018-03-27T17:00:09.966",
+        "summary": "GAPS2 Case",
+        "comment": "CaseLoader Case updated",
+        "event_id": "responseReceived",
+        "event_name": "Response received",
+        "user_id": 43132,
+        "user_last_name": "System Update",
+        "user_first_name": "SSCS",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 154621,
+        "timestamp": "2018-03-27T15:20:12.269",
+        "summary": "SSCS - appeal updated event",
+        "comment": "Updated SSCS",
+        "event_id": "subscriptionUpdated",
+        "event_name": "Updated subscription",
+        "user_id": 43132,
+        "user_last_name": "System Update",
+        "user_first_name": "SSCS",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 154620,
+        "timestamp": "2018-03-27T15:20:10.113",
+        "summary": "SSCS - appeal updated event",
+        "comment": "Updated SSCS",
+        "event_id": "subscriptionUpdated",
+        "event_name": "Updated subscription",
+        "user_id": 43132,
+        "user_last_name": "System Update",
+        "user_first_name": "SSCS",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 154618,
+        "timestamp": "2018-03-27T15:06:55.552",
+        "summary": "",
+        "comment": "",
+        "event_id": "subscriptionUpdated",
+        "event_name": "Updated subscription",
+        "user_id": 5522,
+        "user_last_name": "Merchant",
+        "user_first_name": "Robin",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 154595,
+        "timestamp": "2018-03-27T10:31:36.119",
+        "summary": "",
+        "comment": "",
+        "event_id": "evidenceReceived",
+        "event_name": "Evidence received",
+        "user_id": 6687,
+        "user_last_name": "Web domain",
+        "user_first_name": "CCD",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }, {
+        "id": 147281,
+        "timestamp": "2018-03-26T10:00:25.073",
+        "summary": "GAPS2 Case",
+        "comment": "CaseLoader Case created",
+        "event_id": "appealCreated",
+        "event_name": "Appeal created",
+        "user_id": 43132,
+        "user_last_name": "System Update",
+        "user_first_name": "SSCS",
+        "state_name": "Appeal Created",
+        "state_id": "appealCreated"
+    }],
+    "case_id": "1522058425067027",
+    "case_type": {
+        "id": "Benefit",
+        "name": "SSCS Case v1.5.0_AAT",
+        "description": "SSCS Benefit Cases",
+        "jurisdiction": {
+            "id": "SSCS",
+            "name": "Tribunals",
+            "description": "Social Security and Child Support"
+        }
+    }
+}

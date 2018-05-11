@@ -12,6 +12,8 @@ import {UnsupportedFieldComponent} from "./components/unsupported-field.componen
 import { FieldValueComponent } from './components/field-value/field-value.component';
 
 import {SharedModule} from "../../shared/shared.module";
+import { CollectionComponent } from './components/collection/collection.component';
+import { ComplexComponent } from './components/complex/complex.component';
 
 @NgModule({
     imports: [
@@ -21,7 +23,9 @@ import {SharedModule} from "../../shared/shared.module";
     ],
     entryComponents: [
         UnsupportedFieldComponent,
-        FieldValueComponent
+        FieldValueComponent,
+        CollectionComponent,
+        ComplexComponent
     ],
     declarations: [
         CaseViewerComponent,
@@ -29,7 +33,9 @@ import {SharedModule} from "../../shared/shared.module";
         FieldReadComponent,
         FieldReadLabelComponent,
         UnsupportedFieldComponent,
-        FieldValueComponent
+        FieldValueComponent,
+        CollectionComponent,
+        ComplexComponent
     ],
     providers: [LabelSubstitutionService, FieldsUtils, PaletteService],
     exports: [

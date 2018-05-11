@@ -35,6 +35,8 @@ import TextArea from '../data-types/text-area';
 import YesNo from '../data-types/yesno'
 import FixedList from '../data-types/fixed-list';
 import Date from '../data-types/date';
+import Collection from '../data-types/collection';
+import Complex from '../data-types/complex';
 
 @Injectable()
 export class PaletteService {
@@ -65,8 +67,11 @@ export class PaletteService {
             // case 'MoneyGBP':
             //   return write ? WriteMoneyGbpFieldComponent : ReadMoneyGbpFieldComponent;
             case 'FixedList':
-              return FixedList(caseField, write);
-            // case 'Complex':
+                return FixedList(caseField, write);
+            case 'Collection':
+                return Collection(caseField, write);
+            case 'Complex':
+                return Complex(caseField, write);
             //   switch (caseField.field_type.id) {
             //     case 'AddressGlobalUK':
             //     case 'AddressUK':

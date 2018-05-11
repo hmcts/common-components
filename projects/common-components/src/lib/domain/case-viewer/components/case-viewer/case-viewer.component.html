@@ -37,8 +37,8 @@
                     <tbody>
                     <ng-container *ngFor="let field of tab.fields">
                         <div ccdLabelSubstitutor [caseField]="field" [eventFields]="caseFields">
-                            <ng-container [ngSwitch]="!(field | ccdIsCompound)">
-                                <tr *ngSwitchCase="true">
+                            <ng-container>
+                                <tr>
                                     <th>{{field.label}}</th>
                                     <td>
                                         <ccd-field-read read="false" [caseField]="field"></ccd-field-read>
