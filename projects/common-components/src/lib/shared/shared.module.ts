@@ -15,7 +15,8 @@ import {MatTableModule} from '@angular/material';
     declarations: [TabsComponent, TabComponent, TableComponent],
     exports: [
         TabsComponent,
-        TabComponent
+        TabComponent,
+        TableComponent
     ]
 })
 export class SharedModule {
