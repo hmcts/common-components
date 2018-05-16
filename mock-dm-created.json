@@ -1,0 +1,270 @@
+{
+    "_embedded" : {
+        "documents" : [ {
+            "size" : 5593261,
+            "mimeType" : "application/pdf",
+            "originalDocumentName" : "Building_Microservices.pdf",
+            "createdBy" : "28",
+            "lastModifiedBy" : "28",
+            "modifiedOn" : "2018-05-14T14:47:35.759+0000",
+            "createdOn" : "2018-05-14T14:47:35.760+0000",
+            "classification" : "PRIVATE",
+            "roles" : [ ],
+            "metadata" : { },
+            "_links" : {
+                "self" : {
+                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838"
+                },
+                "binary" : {
+                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838/binary"
+                },
+                "thumbnail" : {
+                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838/thumbnail"
+                }
+            },
+            "_embedded" : {
+                "allDocumentVersions" : {
+                    "_embedded" : {
+                        "documentVersions" : [ {
+                            "size" : 5593261,
+                            "mimeType" : "application/pdf",
+                            "originalDocumentName" : "Building_Microservices.pdf",
+                            "createdBy" : "28",
+                            "createdOn" : "2018-05-14T14:47:35.760+0000",
+                            "_links" : {
+                                "document" : {
+                                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838"
+                                },
+                                "self" : {
+                                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838/versions/00934434-cef9-4163-a4f7-8bcab03661f9"
+                                },
+                                "binary" : {
+                                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838/versions/00934434-cef9-4163-a4f7-8bcab03661f9/binary"
+                                },
+                                "thumbnail" : {
+                                    "href" : "http://localhost:4603/documents/8d5083bb-2fb4-4922-9279-b5cd637a0838/versions/00934434-cef9-4163-a4f7-8bcab03661f9/thumbnail"
+                                }
+                            }
+                        } ]
+                    }
+                }
+            }
+        }, {
+            "size" : 36093,
+            "mimeType" : "image/png",
+            "originalDocumentName" : "jui.png",
+            "createdBy" : "28",
+            "lastModifiedBy" : "28",
+            "modifiedOn" : "2018-05-14T14:47:09.780+0000",
+            "createdOn" : "2018-05-14T14:47:09.781+0000",
+            "classification" : "PRIVATE",
+            "roles" : [ ],
+            "metadata" : { },
+            "_links" : {
+                "self" : {
+                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61"
+                },
+                "binary" : {
+                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61/binary"
+                },
+                "thumbnail" : {
+                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61/thumbnail"
+                }
+            },
+            "_embedded" : {
+                "allDocumentVersions" : {
+                    "_embedded" : {
+                        "documentVersions" : [ {
+                            "size" : 36093,
+                            "mimeType" : "image/png",
+                            "originalDocumentName" : "jui.png",
+                            "createdBy" : "28",
+                            "createdOn" : "2018-05-14T14:47:09.781+0000",
+                            "_links" : {
+                                "document" : {
+                                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61"
+                                },
+                                "self" : {
+                                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61/versions/606ed2cf-49e2-45d1-81e6-5c01038b291b"
+                                },
+                                "binary" : {
+                                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61/versions/606ed2cf-49e2-45d1-81e6-5c01038b291b/binary"
+                                },
+                                "thumbnail" : {
+                                    "href" : "http://localhost:4603/documents/ae21d2bc-8cde-4cac-8c3c-883e286a1d61/versions/606ed2cf-49e2-45d1-81e6-5c01038b291b/thumbnail"
+                                }
+                            }
+                        } ]
+                    }
+                }
+            }
+        }, {
+            "size" : 27061,
+            "mimeType" : "image/png",
+            "originalDocumentName" : "pa.png",
+            "createdBy" : "28",
+            "lastModifiedBy" : "28",
+            "modifiedOn" : "2018-05-14T14:38:59.380+0000",
+            "createdOn" : "2018-05-14T14:38:59.381+0000",
+            "classification" : "PRIVATE",
+            "roles" : [ ],
+            "metadata" : { },
+            "_links" : {
+                "self" : {
+                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8"
+                },
+                "binary" : {
+                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8/binary"
+                },
+                "thumbnail" : {
+                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8/thumbnail"
+                }
+            },
+            "_embedded" : {
+                "allDocumentVersions" : {
+                    "_embedded" : {
+                        "documentVersions" : [ {
+                            "size" : 27061,
+                            "mimeType" : "image/png",
+                            "originalDocumentName" : "pa.png",
+                            "createdBy" : "28",
+                            "createdOn" : "2018-05-14T14:38:59.381+0000",
+                            "_links" : {
+                                "document" : {
+                                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8"
+                                },
+                                "self" : {
+                                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8/versions/2f69cb94-639e-4c96-8108-2847faa0c220"
+                                },
+                                "binary" : {
+                                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8/versions/2f69cb94-639e-4c96-8108-2847faa0c220/binary"
+                                },
+                                "thumbnail" : {
+                                    "href" : "http://localhost:4603/documents/dfcaa6fe-8478-452f-a30e-a90f1ec28ad8/versions/2f69cb94-639e-4c96-8108-2847faa0c220/thumbnail"
+                                }
+                            }
+                        } ]
+                    }
+                }
+            }
+        }, {
+            "size" : 31127,
+            "mimeType" : "image/png",
+            "originalDocumentName" : "rpa.png",
+            "createdBy" : "28",
+            "lastModifiedBy" : "28",
+            "modifiedOn" : "2018-05-14T14:29:25.626+0000",
+            "createdOn" : "2018-05-14T14:29:25.627+0000",
+            "classification" : "PRIVATE",
+            "roles" : [ ],
+            "metadata" : { },
+            "_links" : {
+                "self" : {
+                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0"
+                },
+                "binary" : {
+                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0/binary"
+                },
+                "thumbnail" : {
+                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0/thumbnail"
+                }
+            },
+            "_embedded" : {
+                "allDocumentVersions" : {
+                    "_embedded" : {
+                        "documentVersions" : [ {
+                            "size" : 31127,
+                            "mimeType" : "image/png",
+                            "originalDocumentName" : "rpa.png",
+                            "createdBy" : "28",
+                            "createdOn" : "2018-05-14T14:29:25.627+0000",
+                            "_links" : {
+                                "document" : {
+                                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0"
+                                },
+                                "self" : {
+                                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0/versions/f6f03998-98b4-4278-9364-097abebf79dd"
+                                },
+                                "binary" : {
+                                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0/versions/f6f03998-98b4-4278-9364-097abebf79dd/binary"
+                                },
+                                "thumbnail" : {
+                                    "href" : "http://localhost:4603/documents/153613a5-fe1d-43e6-8faa-7f1290c038d0/versions/f6f03998-98b4-4278-9364-097abebf79dd/thumbnail"
+                                }
+                            }
+                        } ]
+                    }
+                }
+            }
+        }, {
+            "size" : 31127,
+            "mimeType" : "image/png",
+            "originalDocumentName" : "rpa.png",
+            "createdBy" : "28",
+            "lastModifiedBy" : "28",
+            "modifiedOn" : "2018-05-14T14:20:09.287+0000",
+            "createdOn" : "2018-05-14T14:20:09.289+0000",
+            "classification" : "PRIVATE",
+            "roles" : [ ],
+            "metadata" : { },
+            "_links" : {
+                "self" : {
+                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a"
+                },
+                "binary" : {
+                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a/binary"
+                },
+                "thumbnail" : {
+                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a/thumbnail"
+                }
+            },
+            "_embedded" : {
+                "allDocumentVersions" : {
+                    "_embedded" : {
+                        "documentVersions" : [ {
+                            "size" : 31127,
+                            "mimeType" : "image/png",
+                            "originalDocumentName" : "rpa.png",
+                            "createdBy" : "28",
+                            "createdOn" : "2018-05-14T14:20:09.289+0000",
+                            "_links" : {
+                                "document" : {
+                                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a"
+                                },
+                                "self" : {
+                                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a/versions/0bab3da5-3d84-44f2-8e8d-00ccf6f21244"
+                                },
+                                "binary" : {
+                                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a/versions/0bab3da5-3d84-44f2-8e8d-00ccf6f21244/binary"
+                                },
+                                "thumbnail" : {
+                                    "href" : "http://localhost:4603/documents/98c18b55-109a-4460-8ed3-3a88650b383a/versions/0bab3da5-3d84-44f2-8e8d-00ccf6f21244/thumbnail"
+                                }
+                            }
+                        } ]
+                    }
+                }
+            }
+        } ]
+    },
+    "_links" : {
+        "first" : {
+            "href" : "http://localhost:4603/documents/owned?page=0&size=5&sort=createdOn,desc"
+        },
+        "self" : {
+            "href" : "http://localhost:4603/documents/owned?page=0&size=5&sort=createdOn,desc"
+        },
+        "next" : {
+            "href" : "http://localhost:4603/documents/owned?page=1&size=5&sort=createdOn,desc"
+        },
+        "last" : {
+            "href" : "http://localhost:4603/documents/owned?page=3&size=5&sort=createdOn,desc"
+        }
+    },
+    "page" : {
+        "size" : 5,
+        "totalElements" : 18,
+        "totalPages" : 4,
+        "number" : 0
+    }
+}
