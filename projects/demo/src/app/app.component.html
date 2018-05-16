@@ -1,6 +1,6 @@
-<!--<div>-->
-    <!--<lib-case-list></lib-case-list>-->
-<!--</div>-->
-<div>
-    <lib-case-viewer [caseDetails]="data"></lib-case-viewer>
-</div>
+
+<!--<lib-case-viewer [caseDetails]="data"></lib-case-viewer>-->
+<!--<lib-case-list></lib-case-list>-->
+<lib-dm-listview [page]="0" [sortby]="'createdOn'" [order]="'desc'" [size]="10" [mockData]="dmData"></lib-dm-listview>
+<!--<lib-dm-upload></lib-dm-upload>-->
+

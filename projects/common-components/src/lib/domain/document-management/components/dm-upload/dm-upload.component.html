@@ -1,0 +1,53 @@
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-large" data-hook="dm-upload__heading">Upload Document</h1>
+
+
+        <div *ngIf="errorMessage" class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+            <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+                There was an error while uploading your document.
+            </h2>
+            <p *ngIf="errorMessage">{{errorMessage}}</p>
+            <p *ngIf="errorMessage.status">Response status was {{errorMessage.status}}.</p>
+            <!--<p *ngIf="errorMessage.message">{{errorMessage.message}}</p>-->
+        </div>
+    </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-full">
+        <form id="uploadForm" name="dmUploadForm">
+
+            <!--<input type="hidden" id="classification" name="classification" value="RESTRICTED" />-->
+
+            <div class="form-group" *ngFor="let metaData of metaDataFieldList" >
+                <label class="form-label"  for="metadata[{{metaData.metaDataName}}]">
+                    {{metaData.fieldName}}
+                    <span *ngIf="metaData.hint" class="form-hint">{{metaData.hint}}</span>
+                </label>
+                <input required="{{metaData.required}}" type="text" id="metadata[{{metaData.metaDataName}}]" name="metadata[{{metaData.metaDataName}}]" value="{{metaData.value}}"/>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="metadata[userGroup]">List Example</label>
+                <select class="form-control" required="true" id="metadata[userGroup]" name="metadata[userGroup]">
+                    <option value="">---Select Example---</option>
+                    <option value="">GOV.UK elements option 1</option>
+                    <option value="">GOV.UK elements option 2</option>
+                    <option value="">GOV.UK elements option 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="files">File:</label>
+                <input type="file" id="files" name="files" (change)="handleFileInput($event.target.files[0])"/>
+            </div>
+
+            <button class="button" type="button" (click)="uploadDocument()" data-hook="dm-upload__upload-button">Upload</button>
+            <button class="button button-warning" type="button" (click)="cancelUpload()" data-hook="dm-upload__cancel-button">Cancel</button>
+        </form>
+
+    </div>
+</div>
+
+
